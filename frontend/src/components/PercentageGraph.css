@@ -1,0 +1,17 @@
+.graphContainer {
+    margin: auto;
+    width: 80%;
+    padding-top: 75px;
+    padding-bottom: 30px;
+}
+
+.graphInfo {
+    font-family: 'Cormorant Garamond', serif;
+    color: #C5C6C7;
+    font-weight: lighter;
+    font-size: 30px;
+    padding-left: 230px;
+    padding-top: 15px;
+    max-width: 100%;
+    width: 90%;
+}

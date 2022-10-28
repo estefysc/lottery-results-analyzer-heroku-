@@ -1,0 +1,53 @@
+.navbar {
+    padding-top: 50px;
+}
+
+.navbar-collapse {
+    padding-left: 1220px;
+}
+
+.drp-menu {
+    padding-left: 20px;
+}
+
+.dropdown-menu.show {
+    background: none;
+}
+
+.dropdown-menu.show a {
+    color: #C5C6C7;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    padding-left: 35px;
+    transition: all .2s ease-in-out;
+}
+.dropdown-menu.show a:hover {
+    color: #66FCF1;
+    background: none;
+    transform: scale(1.05);
+}
+
+.dropdown-item.active {
+    background: transparent;
+}
+
+.brand {
+    color: #66FCF1;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    padding-left: 240px;
+}
+.brand:hover {
+    display: none;
+}
+
+.nav-link {
+    color: #C5C6C7;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    padding-bottom: 3px;
+    outline: none;
+}
+.nav-link:hover {
+    color: #66FCF1;
+}

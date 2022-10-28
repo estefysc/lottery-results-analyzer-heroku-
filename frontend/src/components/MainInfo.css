@@ -1,0 +1,46 @@
+.main-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    width: 85%;
+    height: 100%;
+    padding: 20px;
+    position: relative;
+    top: 155px;
+}
+.quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    font-weight: lighter;
+    color: #C5C6C7;
+    padding-left: 230px;
+}
+
+.main-info-question {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 75px;
+    color: #45A29E;
+    text-align: left;
+    padding-left: 215px;
+}
+
+.main-info-answer {
+    font-family: 'Cormorant Garamond', serif;
+    color: #C5C6C7;
+    font-weight: lighter;
+    font-size: 32px;
+    padding-left: 230px;
+    padding-top: 15px;
+    max-width: 100%;
+}
+
+.slide-enter {
+    opacity: 0;
+    transform:translateX(-100%);
+}
+.slide-enter-active {
+    opacity: 1;
+    transform:translateX(0);
+    transition: opacity 1500ms, transform 1500ms;
+}

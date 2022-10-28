@@ -1,0 +1,50 @@
+.first-title {
+    font-family: 'Cormorant Garamond', serif;
+    color: #C5C6C7;
+    font-size: 55px;
+    font-weight: 700;
+    text-align: right;
+    margin-top: 35px;
+    margin-right: 650px;
+}
+
+.second-title {
+    font-family: 'Cormorant Garamond', serif;
+    color: #C5C6C7;
+    font-size: 55px;
+    font-weight: 700;
+    text-align: right;
+    margin-top: 33px;
+    margin-right: 605px;
+}
+
+.about-app-pgh {
+    font-family: 'Cormorant Garamond', serif;
+    color: #45A29E;
+    margin: auto;
+    width: 50%;
+    height: auto;
+    font-weight: lighter;
+    font-size: 30px;
+    padding-top: 25px;
+}
+.about-creator-pgh {
+    font-family: 'Cormorant Garamond', serif;
+    color: #45A29E;
+    margin: auto;
+    width: 50%;
+    height: auto;
+    font-weight: lighter;
+    font-size: 30px;
+    padding-top: 25px;
+}
+
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 1000ms ease-in-out;
+}
