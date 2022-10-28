@@ -20,11 +20,7 @@ if(port == null || port == "") {
 //     next();
 // });
 
-app.use(express.static('frontend/build'));
-
-app.get('*', (req, res) => {
-    req.sendFile(path.resolve(__dirname, 'frontend/build', 'index.html'));
-})
+app.use(express.static(path.join(__dirname, 'frontend/build')));
 
 app.get("/", function(req, res){
     getNumberData();
@@ -37,6 +33,10 @@ app.get("/frequentNums", function(req, res) {
 app.get("/evenOdd", function(req, res) {
    res.send(getEvenOddData());
 });
+
+app.get('*', (req, res) => {
+    req.sendFile(path.resolve(__dirname, 'frontend/build', 'index.html'));
+})
 
 // Connects to the lottery website and parses the data when the server is started.
 app.listen(port, function() {
