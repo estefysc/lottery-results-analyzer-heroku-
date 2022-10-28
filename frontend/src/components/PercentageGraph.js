@@ -7,7 +7,7 @@ function PercentageGraph() {
     const [data, setData] = useState("");
 
     function getData() {
-        axios.get("http://localhost:5000/evenOdd", {crossdomain: true})
+        axios.get("https://lottery-analyzer.herokuapp.com/evenOdd", {crossdomain: true})
             .then(response => {
                 setData(response.data);
             });

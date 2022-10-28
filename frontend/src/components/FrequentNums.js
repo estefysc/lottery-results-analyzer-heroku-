@@ -24,7 +24,7 @@ function FrequentNums() {
     // }
 
     async function getMostFreqNumbers() {
-        const response = await axios.get("http://localhost:5000/frequentNums", {crossdomain: true})
+        const response = await axios.get("https://lottery-analyzer.herokuapp.com/frequentNums", {crossdomain: true})
         // const newData = response.data.freqNums.sixMostRepeatedNumbers;
 
         setNumData(response.data.freqNums.sixMostRepeatedNumbers);

@@ -12,7 +12,7 @@ function MainInfo() {
     // }, []);
 
     function initData() {
-        axios.get("http://localhost:5000/", {crossdomain: true}).then();
+        axios.get("https://lottery-analyzer.herokuapp.com/", {crossdomain: true}).then();
     }
 
     useEffect(() => setShow(true), []);
