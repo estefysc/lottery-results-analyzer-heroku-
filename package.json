@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "aws-sdk": "^2.1243.0",
     "cheerio": "^1.0.0-rc.12",
     "express": "^4.18.1",
     "got": "^12.1.0"

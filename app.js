@@ -44,7 +44,14 @@ app.get('*', (req, res) => {
 })
 
 // Connects to the lottery website and parses the data when the server is started.
-app.listen(port, function() {
+// app.listen(port, function() {
+//     console.log("Server started successfully");
+//     console.log("Creating JSON file...");
+//     createJsonFile();
+// });
+
+app.listen(app.get('port'), function() {
+    console.log('Node app is running on port', app.get('port'));
     console.log("Server started successfully");
     console.log("Creating JSON file...");
     createJsonFile();
