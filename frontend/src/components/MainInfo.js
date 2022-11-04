@@ -7,10 +7,6 @@ import axios from "axios";
 function MainInfo() {
     const [show, setShow] = useState(false);
 
-    // useEffect(() => {
-    //     setTimeout(() => setShow(true))
-    // }, []);
-
     function initData() {
         axios.get("https://lottery-analyzer.herokuapp.com", {crossdomain: true}).catch(error => console.error(error));
     }
@@ -33,9 +29,9 @@ function MainInfo() {
                     classNames="slide"
                 >
                     <p className="main-info-answer">
-                        There are more than 42 million people in the United States who play the lottery every week.
-                        And, most of them think that it’s just a matter of luck or fate. However, lotteries are also a game of numbers, not only chance.
-                        Explore this app to find some number patters in the Florida Lotto draws.
+                        There are more than 42 million people in the United States who play the lottery every week and
+                        most of them think that it’s just a matter of luck or fate. However, lotteries are also a game of numbers, not only chance.
+                        Explore this app to find some number patters in the Florida Lotto drawings.
                     </p>
                 </CSSTransition>
             </div>
