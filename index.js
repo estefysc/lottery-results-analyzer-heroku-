@@ -10,6 +10,7 @@ let evenOddData;
 // Obtains the data from the lottery website.
 let getNumberData = () => {
     evenOddData = evenAndOddPercentageCalculator();
+    console.log(evenOddData);
 }
 
 // Obtains the six most repeated numbers and its frequencies.
