@@ -12,7 +12,7 @@ function MainInfo() {
     // }, []);
 
     function initData() {
-        axios.get("/", {crossdomain: true}).then();
+        axios.get("/", {crossdomain: true}).catch(error => console.error(error));
     }
 
     useEffect(() => setShow(true), []);
