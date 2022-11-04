@@ -80,6 +80,7 @@ let createResultsArray = function (arrayWithWords) {
                 resultsArray = create2dArray(numOfRows, numsPerPlay, intArray),
             );
             console.log("resultsArray created");
+            console.log(resultsArray);
         } else {
             reject("the promise within the createResultsArray function did not work");
         }
