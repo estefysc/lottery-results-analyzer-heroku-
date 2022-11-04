@@ -3,7 +3,7 @@ import {createRequire} from "module";
 import {evenAndOddPercentageCalculator, getSixMostRepeatedNumbers} from "./calculations.js";
 
 const require = createRequire(import.meta.url);
-const data = require("./data.json");
+// const data = require("./data.json");
 
 let evenOddData;
 

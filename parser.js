@@ -92,13 +92,13 @@ let createResultsArray = function (arrayWithWords) {
 function createJsonFile() {
     wordsArrayPromise.then(() => {
         createResultsArray(wordArray);
-        resultArrayJson = JSON.stringify(resultsArray);
+        // resultArrayJson = JSON.stringify(resultsArray);
 
-        fs.writeFile("data.json", resultArrayJson, function (err) {
-            console.log(err ? 'Error :' + err : 'File created')
-        });
+        // fs.writeFile("data.json", resultArrayJson, function (err) {
+        //     console.log(err ? 'Error :' + err : 'File created')
+        // });
     });
-    return resultArrayJson;
+    // return resultArrayJson;
 }
 
 // The resultsArray variable is exported to be used in the calculations.js file.

@@ -1,7 +1,3 @@
-// const express = require("express");
-// const Quote = require('inspirational-quotes');
-// const Parser = require('./Parser');
-
 import express from "express";
 import {getMostRepeated, getNumberData, getEvenOddData} from "./index.js";
 import {createJsonFile} from "./parser.js";
@@ -40,10 +36,6 @@ app.get("/evenOdd", function(req, res) {
    res.send(getEvenOddData());
     console.log("getEvenOddData() called from app.get('/evenOdd')");
 });
-
-// app.get('*', (req, res) => {
-//     res.sendFile(path.resolve(__dirname, 'frontend/build', 'index.html'));
-// })
 
 app.use(express.static(path.join(__dirname, 'frontend/build')));
 
