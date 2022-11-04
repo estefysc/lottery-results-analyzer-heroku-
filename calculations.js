@@ -62,11 +62,6 @@ function evenAndOddCalculator() {
                 ++zeroEvenInSet;
                 break;
         }
-
-        // console.log();
-        // console.log(`For this result: ${resultsArray[i]}`);
-        // console.log(`even = ${evenCounter}`);
-        // console.log(`odd = ${oddCounter}`);
     } // End of i-variable for loop. Checks each set of six.
 
     globalNumbersMap = numbersMap;
@@ -96,23 +91,6 @@ function evenAndOddPercentageCalculator() {
     let percentFiveEven = (numbersData.fiveEvenInSet * 100.00) / amountOfSets;
     let percentSixEven = (numbersData.sixEvenInSet * 100.00) / amountOfSets;
 
-    // console.log();
-    // console.log(`Total sets = ${amountOfSets}`);
-    // console.log(`Total even numbers = ${numbersData.totalEvenNumbers}`);
-    // console.log(`Total odd numbers = ${numbersData.totalOddNumbers}`);
-    // console.log();
-    // console.log(`Average amount of even numbers per set = ${averageEven}`);
-    // console.log(`Average amount of odd numbers per set = ${averageOdd}`);
-    // console.log();
-    // console.log(`The amount of sets with zero even numbers or six odd numbers is ${numbersData.zeroEvenInSet}, a percentage of ${percentZeroEven}%`);
-    // console.log(`The amount of sets with one even numbers or five odd numbers is ${numbersData.oneEvenInSet}, a percentage of ${percentOneEven}%`);
-    // console.log(`The amount of sets with two even numbers or four odd numbers is ${numbersData.twoEvenInSet}, a percentage of ${percentTwoEven}%`);
-    // console.log(`The amount of sets with three even numbers or three odd numbers is ${numbersData.threeEvenInSet}, a percentage of ${percentThreeEven}%`);
-    // console.log(`The amount of sets with four even numbers or two odd numbers is ${numbersData.fourEvenInSet}, a percentage of ${percentFourEven}%`);
-    // console.log(`The amount of sets with five even numbers or one odd numbers is ${numbersData.fiveEvenInSet}, a percentage of ${percentFiveEven}%`);
-    // console.log(`The amount of sets with six even numbers or zero odd numbers is ${numbersData.sixEvenInSet}, a percentage of ${percentSixEven}%`);
-    // console.log();
-
     console.log("evenAndOddPercentageCalculator() function has been run.");
 
     return {
@@ -130,11 +108,6 @@ function getSixMostRepeatedNumbers() {
 
     // Saves the six most repeated numbers and its frequencies in an array.
     let sixMostRepeatedNumbers = Array.from(globalNumbersMap.entries()).slice(0, 6);
-
-    // console.log("The six most repeated numbers with its frequencies of appearance are as follows: ");
-    // sixMostRepeatedNumbers.forEach(number => {
-    //     console.log(`${number}, appearing ${globalNumbersMap.get(number)} times`);
-    // });
 
     console.log("getSixMostRepeatedNumbers() function has been run.");
 
