@@ -25,10 +25,13 @@ app.use(function(req, res, next) {
     next();
 });
 
-app.use(express.static(path.join(__dirname, 'frontend/build')));
+// app.use(express.static(path.join(__dirname, 'frontend/build')));
+
+// execute the getNumberData function when the root of the app is requested.
 
 app.get("/", function(req, res){
     getNumberData();
+    res.sendFile(path.join(__dirname, 'frontend/build', 'index.html'));
     console.log("getNumberData() called from app.get('/')");
 });
 
