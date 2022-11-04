@@ -29,14 +29,17 @@ app.use(express.static(path.join(__dirname, 'frontend/build')));
 
 app.get("/", function(req, res){
     getNumberData();
+    console.log("getNumberData() called from app.get('/')");
 });
 
 app.get("/frequentNums", function(req, res) {
     res.send(getMostRepeated());
+    console.log("getMostRepeated() called from app.get('/frequentNums')");
 });
 
 app.get("/evenOdd", function(req, res) {
    res.send(getEvenOddData());
+    console.log("getEvenOddData() called from app.get('/evenOdd')");
 });
 
 app.get('*', (req, res) => {
