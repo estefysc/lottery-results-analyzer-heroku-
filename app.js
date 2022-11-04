@@ -25,6 +25,8 @@ app.use(function(req, res, next) {
     next();
 });
 
+app.use(express.static(path.join(__dirname, 'frontend/build')));
+
 app.get("/", function(req, res){
     getNumberData();
     console.log("getNumberData() called from app.get('/')");
@@ -51,4 +53,3 @@ app.listen(port, function() {
     createJsonFile();
 });
 
-app.use(express.static(path.join(__dirname, 'frontend/build')));
