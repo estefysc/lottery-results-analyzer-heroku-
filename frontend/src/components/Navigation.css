@@ -1,13 +1,33 @@
 .navbar {
-    padding-top: 50px;
+    /*padding-top: 50px;*/
+    padding-top: 3%;
+    padding-right: 2%;
 }
 
 .navbar-collapse {
-    padding-left: 1220px;
+    /*padding-left: 1220px;*/
+    padding-left: 65%;
+}
+
+/*.navbar-expand-lg {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    padding-right: 10%;*/
+/*}*/
+
+.collapsed-nav {
+    color: #66FCF1;
+    border: none;
+}
+
+.collapsed-nav:hover {
+    color: #C5C6C7;
+    border: none;
 }
 
 .drp-menu {
-    padding-left: 20px;
+    /*padding-left: 20px;*/
+    padding-left: 12%;
 }
 
 .dropdown-menu.show {
@@ -18,7 +38,8 @@
     color: #C5C6C7;
     font-family: 'Cormorant Garamond', serif;
     font-size: 22px;
-    padding-left: 35px;
+    /*padding-left: 35px;*/
+    padding-left: 15%;
     transition: all .2s ease-in-out;
 }
 .dropdown-menu.show a:hover {
@@ -35,7 +56,8 @@
     color: #66FCF1;
     font-family: 'Cormorant Garamond', serif;
     font-size: 30px;
-    padding-left: 240px;
+    /*padding-left: 240px;*/
+    padding-left: 12%;
 }
 .brand:hover {
     display: none;
@@ -45,7 +67,8 @@
     color: #C5C6C7;
     font-family: 'Cormorant Garamond', serif;
     font-size: 22px;
-    padding-bottom: 3px;
+    /*padding-bottom: 3px;*/
+    padding-bottom: 1%;
     outline: none;
 }
 .nav-link:hover {
