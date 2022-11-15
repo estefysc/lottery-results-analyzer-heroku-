@@ -17,7 +17,7 @@ function About() {
                 classNames="fade"
             >
                 <p className="about-app-pgh">
-                    This app explores the Florida Lotto draws history to find some number patters in the results. The app currently shows the six most frequent numbers
+                    Everytime you access this app, the lottery results are updated through website-scrapping. The app currently shows the six most frequent numbers
                     and the amount of times, as a percentage, even numbers appear in the result sets. More insights will be added in the future.
                     This app is built with React, Node JS, and Express.
                 </p>

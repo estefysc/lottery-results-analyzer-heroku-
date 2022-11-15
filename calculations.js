@@ -4,7 +4,8 @@ const numbersInOnePlay = 6;
 
 let globalNumbersMap = new Map();
 
-// This function runs within the evenAndOddPercentageCalculator() function and is used to calculate the amount of times even and odd numbers appear.
+// This function runs within the evenAndOddPercentageCalculator() function and is used to calculate the amount of times
+// even and odd numbers appear.
 function evenAndOddCalculator() {
     let totalEvenNumbers = 0;
     let totalOddNumbers = 0;
@@ -74,7 +75,6 @@ function evenAndOddCalculator() {
     }
 } // End of evenAndOddCalculator function.
 
-// Needs to be run after evenAndOddCalculator()
 function evenAndOddPercentageCalculator() {
     let numbersData = evenAndOddCalculator();
 
@@ -99,7 +99,7 @@ function evenAndOddPercentageCalculator() {
     }
 } // End of evenAndOddPercentageCalculator function.
 
-// Function to check which is the six most repeated numbers in the set.
+// Function to check which is the six most repeated numbers.
 // todo: Find why this function is being ran twice.
 function getSixMostRepeatedNumbers() {
     let totalPlays = resultsArray.length;

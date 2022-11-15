@@ -13,13 +13,11 @@ let resultArrayJson;
 
 // Helper function to create a 2d array for the results.
 function create2dArray(rows, columns, numArr) {
-    let twoDimArray = [];
+    let twoDimArray = new Array(rows);
     let numsArrayIndex = 0;
 
     for(let i = 0; i < rows; i++) {
-        twoDimArray.push([]);
-
-        twoDimArray[i].push(new Array(columns));
+        twoDimArray[i] = new Array(columns);
 
         for(let j = 0; j < columns; j++) {
             if(numsArrayIndex < numArr.length) {
@@ -80,7 +78,6 @@ let createResultsArray = function (arrayWithWords) {
                 resultsArray = create2dArray(numOfRows, numsPerPlay, intArray),
             );
             console.log("resultsArray created");
-            console.log(resultsArray);
         } else {
             reject("the promise within the createResultsArray function did not work");
         }
