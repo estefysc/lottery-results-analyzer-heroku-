@@ -30,7 +30,7 @@ function MainInfo() {
                 >
                     <p className="main-info-answer">
                         There are more than 42 million people in the United States who play the lottery every week.
-                        Explore this app to find some number patters in the Florida Lotto drawings.
+                        Explore this app to find some number patterns in the Florida Lotto drawings.
                     </p>
                 </CSSTransition>
             </div>
