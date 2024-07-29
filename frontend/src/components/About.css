@@ -48,3 +48,15 @@
     opacity: 1;
     transition: opacity 1000ms ease-in-out;
 }
+
+a {
+    font-family: 'Cormorant Garamond', serif;
+    color: #C5C6C7; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+  
+a:hover {
+    color: #66FCF1; 
+    text-decoration: underline;
+}

@@ -31,6 +31,11 @@ function About() {
                 <p className="about-creator-pgh">
                     Estefanía Sánchez, born in Peru and raised in Mexico, graduated from Valencia College with a Bachelor of Applied Science in Software Development with a minor in music theory and composition.
                     Some of her passions include art, soccer, and technology. She aims to explore creativity, machine learning, and artificial intelligence as she continues her education beyond her bachelor's degree.
+                    Check out the code for this app and other projects{' '}
+                    <a href="https://github.com/estefysc?tab=repositories" target="_blank" rel="noopener noreferrer">
+                        here
+                    </a>
+                    .
                 </p>
             </CSSTransition>
         </div>
