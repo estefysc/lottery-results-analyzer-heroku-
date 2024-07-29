@@ -13,9 +13,11 @@ function Navigation() {
         <>
             <Navbar variant="dark" expand="lg">
                 {/*<div className="container">*/}
-                <Navbar.Brand className="brand">
-                    <FontAwesomeIcon icon={faPlusMinus} />
-                </Navbar.Brand>
+                <LinkContainer to="/">
+                    <Navbar.Brand className="brand">
+                        <FontAwesomeIcon icon={faPlusMinus} />
+                    </Navbar.Brand>
+                </LinkContainer>
                 <Navbar.Toggle className="collapsed-nav" aria-controls="basic-navbar-nav">
                         <span >
                             <FontAwesomeIcon className="bars" icon={faBars} />
