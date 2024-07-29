@@ -29,8 +29,7 @@ function MainInfo() {
                     classNames="slide"
                 >
                     <p className="main-info-answer">
-                        There are more than 42 million people in the United States who play the lottery every week and
-                        most of them think that it’s just a matter of luck or fate. However, lotteries are also a game of numbers, not only chance.
+                        There are more than 42 million people in the United States who play the lottery every week.
                         Explore this app to find some number patters in the Florida Lotto drawings.
                     </p>
                 </CSSTransition>
