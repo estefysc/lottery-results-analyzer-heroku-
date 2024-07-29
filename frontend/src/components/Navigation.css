@@ -74,3 +74,53 @@
 .nav-link:hover {
     color: #66FCF1;
 }
+
+/* Media Queries */
+@media (max-width: 767px) {
+    .navbar {
+        padding: 1% 2%;
+    }
+
+    .navbar-collapse {
+        padding-left: 0;
+    }
+
+    .brand {
+        font-size: 24px;
+        padding-left: 5%;
+    }
+
+    .nav-link {
+        font-size: 18px;
+        padding-bottom: 2%;
+    }
+
+    .drp-menu {
+        padding-left: 5%;
+    }
+
+    .dropdown-menu.show a {
+        font-size: 18px;
+        padding-left: 5%;
+    }
+}
+
+@media (max-width: 479px) {
+    .navbar {
+        padding: 0.5% 1%;
+    }
+
+    .brand {
+        font-size: 20px;
+        padding-left: 3%;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .drp-menu, .dropdown-menu.show a {
+        padding-left: 2%;
+        font-size: 16px;
+    }
+}
