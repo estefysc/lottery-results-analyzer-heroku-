@@ -52,13 +52,19 @@
 }
 
 /* Media Queries */
+@media (max-width: 1899px) {
+    .number-container {
+        display: none; 
+    }
+}
+
 @media (max-width: 767px) {
     .main-container {
         flex-direction: column;
         margin-left: 5%;
     }
 
-    .number-container, .info-container {
+    .info-container {
         width: 90%;
         padding-right: 0;
         margin-top: 20px;
