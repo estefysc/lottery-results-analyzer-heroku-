@@ -78,11 +78,11 @@
 /* Media Queries */
 @media (max-width: 767px) {
     .navbar {
-        padding: 1% 2%;
+        padding: 5% 3%;
     }
 
     .navbar-collapse {
-        padding-left: 0;
+        padding-left: 0%;
     }
 
     .brand {
@@ -93,21 +93,22 @@
     .nav-link {
         font-size: 18px;
         padding-bottom: 2%;
+        padding-left: 5%;
     }
 
     .drp-menu {
-        padding-left: 5%;
+        padding-left: 0%;
     }
 
     .dropdown-menu.show a {
+        padding-left: 8%;
         font-size: 18px;
-        padding-left: 5%;
     }
 }
 
 @media (max-width: 479px) {
     .navbar {
-        padding: 0.5% 1%;
+        padding: 5% 3%;
     }
 
     .brand {
@@ -116,11 +117,17 @@
     }
 
     .nav-link {
+        padding-left: 2%;
         font-size: 16px;
     }
 
-    .drp-menu, .dropdown-menu.show a {
-        padding-left: 2%;
+    .drp-menu {
+        padding-left: 0%;
+        font-size: 16px;
+    }
+
+    .dropdown-menu.show a {
+        padding-left: 5%;
         font-size: 16px;
     }
 }
