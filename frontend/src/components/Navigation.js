@@ -12,7 +12,6 @@ function Navigation() {
     return (
         <>
             <Navbar variant="dark" expand="lg">
-                {/*<div className="container">*/}
                 <LinkContainer to="/">
                     <Navbar.Brand className="brand">
                         <FontAwesomeIcon icon={faPlusMinus} />
@@ -25,11 +24,6 @@ function Navigation() {
                 </Navbar.Toggle>
                 <Navbar.Collapse id="responsive-navbar-nav" >
                     <Nav className="me-auto">
-                        {/*<LinkContainer to="/">*/}
-                        {/*    <Nav.Link className="nav-link">*/}
-                        {/*        Home*/}
-                        {/*    </Nav.Link>*/}
-                        {/*</LinkContainer>*/}
                         <LinkContainer to="about">
                             <Nav.Link className="nav-link">
                                 About
@@ -46,13 +40,9 @@ function Navigation() {
                                     Evens and Odds
                                 </NavDropdown.Item>
                             </LinkContainer>
-                            {/*<NavDropdown.Item className="drp-item">*/}
-                            {/*    Something else here*/}
-                            {/*</NavDropdown.Item>*/}
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
-                {/*</div>*/}
             </Navbar>
         </>
     );

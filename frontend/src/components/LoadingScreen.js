@@ -12,12 +12,6 @@ function LoadingScreen() {
             <div className="ball"></div>
             <div className="ball"></div>
         </div>
-
-        // <div className="loading">
-        //     <div className="loading__icon-wrap">
-        //         <div className="loading__icon">Loading</div>
-        //     </div>
-        // </div>
     );
 }
 
