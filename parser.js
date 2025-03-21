@@ -1,5 +1,6 @@
 import cheerio from "cheerio";
 import got from "got";
+import fs from "fs";
 
 const lotteryURL = "https://flalottery.com/exptkt/l6.htm";
 const numsPerPlay = 6;
