@@ -15,36 +15,15 @@ function PercentageGraph() {
 
     useEffect(() => getData(), []);
 
-    const graphInfo = [
-        {
-            name: 'Zero Even Numbers',
-            percentage: `${Math.round(data.percentZeroEven * 10) / 10}`,
-        },
-        {
-            name: 'One Even Number',
-            percentage: `${Math.round(data.percentOneEven * 10) / 10}`,
-        },
-        {
-            name: 'Two Even Numbers',
-            percentage: `${Math.round(data.percentTwoEven * 10) / 10}`,
-        },
-        {
-            name: 'Three Even Numbers',
-            percentage: `${Math.round(data.percentThreeEven * 10) / 10}`,
-        },
-        {
-            name: 'Four Even Numbers',
-            percentage: `${Math.round(data.percentFourEven * 10) / 10}`,
-        },
-        {
-            name: 'Five Even Numbers',
-            percentage: `${Math.round(data.percentFiveEven * 10) / 10}`,
-        },
-        {
-            name: 'Six Even Numbers',
-            percentage: `${Math.round(data.percentSixEven * 10) / 10}`,
-        },
-    ];
+    const graphInfo = Array.from({ length: 7 }, (_, index) => {
+        const propertyName = `percent${['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six'][index]}Even`;
+        const displayName = `${['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six'][index]} Even ${index === 1 ? 'Number' : 'Numbers'}`;
+        
+        return {
+            name: displayName,
+            percentage: data && data[propertyName] ? `${Math.round(data[propertyName] * 10) / 10}` : '0',
+        };
+    });
 
     return (
         <div className="graphContainer">
