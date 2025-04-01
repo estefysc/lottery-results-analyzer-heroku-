@@ -42,15 +42,12 @@ app.use(express.static(path.join(__dirname, 'frontend/build')));
 
 // Connects to the lottery website and parses the data when the server is started.
 app.listen(port, function() {
-    //createJsonFile();
     createJsonFile()
         .then(jsonData => {
             console.log("JSON file created successfully!");
-            // Optionally do something with jsonData
         })
         .catch(error => {
             console.error("Failed to create JSON file:", error);
-            // Optionally implement recovery or fallback behavior
         });
 });
 

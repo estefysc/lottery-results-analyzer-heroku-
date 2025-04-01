@@ -34,21 +34,3 @@ let getAllNumsData = () => {
 }
 
 export {getMostRepeated, getNumberData, getEvenOddData, getAllNumsData};
-
-
-// let getNumberData = () => {
-//     evenOddData = evenAndOddPercentageCalculator();
-// }
-
-// // Obtains the six most repeated numbers and its frequencies.
-// let getMostRepeated = () => {
-//     return {
-//         freqNums: getSixMostRepeatedNumbers(evenOddData.numbersMap) 
-//     };
-// }
-
-// let getEvenOddData = () => {
-//     return evenOddData;
-// }
-
-// export {getMostRepeated, getNumberData, getEvenOddData};
