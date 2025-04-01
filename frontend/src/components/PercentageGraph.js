@@ -39,12 +39,11 @@ function PercentageGraph() {
                         bottom: 0,
                     }}
                 >
-                    <CartesianGrid strokeDasharray="4 4" />
                     <XAxis dataKey="name" stroke="#C5C6C7"/>
                     <YAxis type="number" domain={[0, 50]} stroke="#C5C6C7"/>
                     <Tooltip />
                     <Legend align={"left"}/>
-                    <Line type="monotone" dataKey="percentage" stroke="#45A29E" activeDot={{ r: 8 }} />
+                    <Line type="monotone" dataKey="percentage" stroke="#FF8E71" activeDot={{ r: 8 }} />
                 </LineChart>
             </ResponsiveContainer>
         </div>
