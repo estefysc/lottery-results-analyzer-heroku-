@@ -1,5 +1,5 @@
 import express from "express";
-import {getMostRepeated, getNumberData, getEvenOddData} from "./index.js";
+import {getMostRepeated, getNumberData, getEvenOddData, getAllNumsData} from "./index.js";
 import {createJsonFile} from "./parser.js";
 import path from "path";
 import {fileURLToPath} from 'url';
