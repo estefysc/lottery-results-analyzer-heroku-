@@ -10,6 +10,7 @@ import About from "./components/About";
 import {Routes,Route} from "react-router-dom";
 import FrequentNums from "./components/FrequentNums";
 import EvenOdds from "./components/EvenOdds";
+import AllNums from "./components/AllNums";
 
 function App() {
     const [loading, setLoading] = useState(true);
