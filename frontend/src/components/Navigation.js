@@ -40,6 +40,11 @@ function Navigation() {
                                     Evens and Odds
                                 </NavDropdown.Item>
                             </LinkContainer>
+                            <LinkContainer to="allNums">
+                                <NavDropdown.Item className="drp-item">
+                                    All Numbers
+                                </NavDropdown.Item>
+                            </LinkContainer>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>

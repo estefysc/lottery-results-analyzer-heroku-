@@ -1,0 +1,48 @@
+.graphContainer {
+    margin: auto;
+    width: 80%;
+    padding-top: 75px;
+    /*padding-top: 30%;*/
+    /*padding-bottom: 75px;*/
+    padding-bottom: 30px;
+}
+
+.graphInfo {
+    font-family: 'Cormorant Garamond', serif;
+    color: #C5C6C7;
+    font-weight: lighter;
+    font-size: 30px;
+    padding-left: 230px;
+    padding-top: 15px;
+    max-width: 100%;
+    width: 90%;
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+    .graphContainer {
+        width: 95%;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    .graphInfo {
+        font-size: 24px;
+        padding-left: 20px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 479px) {
+    .graphContainer {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+
+    .graphInfo {
+        font-size: 18px;
+        padding-left: 10px;
+        width: 100%;
+    }
+}

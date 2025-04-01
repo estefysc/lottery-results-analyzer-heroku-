@@ -31,6 +31,7 @@ function App() {
                             <Route path="/about" element={<About />} />
                             <Route path="/frequentNums" element={<FrequentNums />} />
                             <Route path="/evenOdds" element={<EvenOdds />} />
+                            <Route path="/allNums" element={<AllNums />} />
                         </Routes>
                     </div>
                 )

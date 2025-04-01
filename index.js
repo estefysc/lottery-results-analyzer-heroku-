@@ -8,18 +8,47 @@ let evenOddData;
 
 // Obtains the data from the lottery website and initializes the evenOddData variable.
 let getNumberData = () => {
-    evenOddData = evenAndOddPercentageCalculator();
+    if (!evenOddData) {
+        evenOddData = evenAndOddPercentageCalculator();
+    }
+    return evenOddData;
 }
 
 // Obtains the six most repeated numbers and its frequencies.
 let getMostRepeated = () => {
     return {
-        freqNums: getSixMostRepeatedNumbers(evenOddData.numbersMap) 
+        freqNums: getSixMostRepeatedNumbers(getNumberData().numbersMap) 
     };
 }
 
 let getEvenOddData = () => {
+    if (!evenOddData) {
+        evenOddData = evenAndOddPercentageCalculator();
+    }
     return evenOddData;
 }
 
-export {getMostRepeated, getNumberData, getEvenOddData};
+let getAllNumsData = () => {
+    let numbersMap = getNumberData().numbersMap;
+    return { numbers: Object.fromEntries(numbersMap) };
+}
+
+export {getMostRepeated, getNumberData, getEvenOddData, getAllNumsData};
+
+
+// let getNumberData = () => {
+//     evenOddData = evenAndOddPercentageCalculator();
+// }
+
+// // Obtains the six most repeated numbers and its frequencies.
+// let getMostRepeated = () => {
+//     return {
+//         freqNums: getSixMostRepeatedNumbers(evenOddData.numbersMap) 
+//     };
+// }
+
+// let getEvenOddData = () => {
+//     return evenOddData;
+// }
+
+// export {getMostRepeated, getNumberData, getEvenOddData};

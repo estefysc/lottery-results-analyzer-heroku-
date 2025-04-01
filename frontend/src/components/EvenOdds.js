@@ -1,4 +1,3 @@
-import React from "react";
 import PercentageGraph from "./PercentageGraph";
 
 import "./EvenOdds.css";
