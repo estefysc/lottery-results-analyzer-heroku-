@@ -26,17 +26,33 @@ app.get("/", function(req, res){
     getNumberData();
 });
 
-app.get("/frequentNums", function(req, res) {
+// app.get("/frequentNums", function(req, res) {
+//     res.send(getMostRepeated());
+// });
+
+// app.get("/evenOdd", function(req, res) {
+//    res.send(getEvenOddData());
+// });
+
+// app.get("/allNums", function(req, res) {
+//     res.send(getAllNumsData());
+//  });
+
+
+app.get("/api/frequentNums", function(req, res) {
     res.send(getMostRepeated());
 });
 
-app.get("/evenOdd", function(req, res) {
+app.get("/api/evenOdd", function(req, res) {
    res.send(getEvenOddData());
 });
 
-app.get("/allNums", function(req, res) {
+app.get("/api/allNums", function(req, res) {
     res.send(getAllNumsData());
- });
+});
+ app.get("*", function(req, res) {
+    res.sendFile(path.resolve(__dirname, 'frontend/build', 'index.html'));
+});
 
 app.use(express.static(path.join(__dirname, 'frontend/build')));
 

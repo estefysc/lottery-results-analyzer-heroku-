@@ -8,7 +8,7 @@ function FrequentNums() {
     const [plays, setPlays] = useState(0);
 
     async function getMostFreqNumbers() {
-        const response = await axios.get("https://lottery-analyzer.herokuapp.com/frequentNums", {crossdomain: true})
+        const response = await axios.get("https://lottery-analyzer.herokuapp.com/api/frequentNums", {crossdomain: true})
         
         setNumData(response.data.freqNums.sixMostRepeatedNumbers);
         setPlays(response.data.freqNums.totalPlays);

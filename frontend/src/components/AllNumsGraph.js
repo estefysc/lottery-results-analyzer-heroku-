@@ -7,7 +7,7 @@ function AllNumsGraph() {
     const [data, setData] = useState("");
 
     function getData() {
-        axios.get("https://lottery-analyzer.herokuapp.com/allNums", {crossdomain: true})
+        axios.get("https://lottery-analyzer.herokuapp.com/api/allNums", {crossdomain: true})
             .then(response => {
                 setData(response.data);
             });
