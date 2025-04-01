@@ -21,10 +21,12 @@ app.use(function(req, res, next) {
     next();
 });
 
-app.get("/", function(req, res){
-    res.sendFile(path.resolve(__dirname, 'frontend/build', 'index.html'));
-    getNumberData();
-});
+app.use(express.static(path.join(__dirname, 'frontend/build')));
+
+// app.get("/", function(req, res){
+//     res.sendFile(path.resolve(__dirname, 'frontend/build', 'index.html'));
+//     getNumberData();
+// });
 
 // app.get("/frequentNums", function(req, res) {
 //     res.send(getMostRepeated());
@@ -50,11 +52,17 @@ app.get("/api/evenOdd", function(req, res) {
 app.get("/api/allNums", function(req, res) {
     res.send(getAllNumsData());
 });
+
+app.get("/", function(req, res){
+    res.sendFile(path.resolve(__dirname, 'frontend/build', 'index.html'));
+    getNumberData();
+});
+
  app.get("*", function(req, res) {
     res.sendFile(path.resolve(__dirname, 'frontend/build', 'index.html'));
 });
 
-app.use(express.static(path.join(__dirname, 'frontend/build')));
+// app.use(express.static(path.join(__dirname, 'frontend/build')));
 
 // Connects to the lottery website and parses the data when the server is started.
 app.listen(port, function() {
