@@ -45,11 +45,11 @@ function Navigation() {
                                     All Numbers
                                 </NavDropdown.Item>
                             </LinkContainer>
-                            <LinkContainer to="consecutiveNums">
+                            {/* <LinkContainer to="consecutiveNums">
                                 <NavDropdown.Item className="drp-item">
                                     Consecutive Numbers
                                 </NavDropdown.Item>
-                            </LinkContainer>
+                            </LinkContainer> */}
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
