@@ -34,7 +34,7 @@ let getAllNumsData = () => {
 }
 
 let getConsecutiveNumsData = () => {
-    let consecutiveNumsData = analyzeConsecutiveNumbers(getNumberData().resultsArray);
+    let consecutiveNumsData = analyzeConsecutiveNumbers();
     console.log("Consecutive Numbers Data: ", consecutiveNumsData);
     return consecutiveNumsData;
 }

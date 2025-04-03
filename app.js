@@ -59,6 +59,7 @@ app.get("/api/consecutiveNums", function(req, res) {
 
 app.get("/", function(req, res){
     res.sendFile(path.resolve(__dirname, 'frontend/build', 'index.html'));
+    console.log("Getting number data... from app.js get /");
     getNumberData();
 });
 
