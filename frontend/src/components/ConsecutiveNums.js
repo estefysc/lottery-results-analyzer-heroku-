@@ -20,7 +20,6 @@ function ConsecutiveNums() {
 
     useEffect(() => {
         getConsecutiveData();
-        console.log(consecutiveData);
     }, []);
 
     if (loading) {

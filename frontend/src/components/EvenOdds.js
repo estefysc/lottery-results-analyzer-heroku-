@@ -5,6 +5,7 @@ import "./EvenOdds.css";
 function EvenOdds() {
     return (
         <div>
+            <h2 className="section-title">Even and Odd Numbers Analysis</h2>
             <PercentageGraph />
             <p className="graphInfo">
                 The graph above shows the amount of times, as a percentage, that one even number, or sets of them, have appeared in each draw.

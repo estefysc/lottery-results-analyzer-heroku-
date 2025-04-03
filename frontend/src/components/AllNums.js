@@ -5,6 +5,7 @@ import "./AllNums.css";
 function AllNums() {
     return (
         <div>
+            <h2 className="section-title">All Numbers Analysis</h2>
             <AllNumsGraph />
             <p className="graphInfo">
                 This graph shows the frequency of all numbers (1-53) in the Florida Lotto.
