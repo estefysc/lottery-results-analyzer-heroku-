@@ -26,7 +26,7 @@ function FrequentNums() {
 
     return (
         <div className='main-container'>
-            <h2 className="section-title">Most Frequent Numbers Analysis</h2>
+            {/* <h2 className="section-title">Most Frequent Numbers Analysis</h2> */}    
             <div className='info-container'>
                 <p className='info-text'>
                     The Florida Lotto, played since 1988, lets you choose 6 numbers between 1 and 53. So far, there
