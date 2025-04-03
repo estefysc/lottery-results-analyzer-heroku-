@@ -85,4 +85,83 @@ function getSixMostRepeatedNumbers(numMap) {
     return {sixMostRepeatedNumbers, totalPlays};
 } // End of getMostRepeatedNumbers function.
 
-export {evenAndOddCalculator, evenAndOddPercentageCalculator, getSixMostRepeatedNumbers};
+function analyzeConsecutiveNumbers(resultsArray) {
+    // Stats for single longest sequence per play
+    const longestSequenceStats = {
+      noConsecutives: 0,
+      twoConsecutive: 0,   // longest sequence is 2 consecutive numbers
+      threeConsecutive: 0, // longest sequence is 3 consecutive numbers
+      fourConsecutive: 0,  // longest sequence is 4 consecutive numbers
+      fiveConsecutive: 0,  // longest sequence is 5 consecutive numbers
+      sixConsecutive: 0    // all 6 numbers consecutive
+    };
+    
+    // Stats for multiple sequences
+    const multipleSequencesStats = {
+      oneSequence: 0,      // play has exactly one sequence
+      twoSequences: 0,     // play has exactly two sequences
+      threeSequences: 0,   // play has exactly three sequences
+      sequenceCombinations: {} // detailed breakdown of sequence combinations
+    };
+  
+    resultsArray.forEach(play => {
+      const sortedPlay = [...play].sort((a, b) => a - b);
+      const sequences = [];
+      let currentSeq = [sortedPlay[0]];
+      
+      // Find all consecutive sequences
+      for (let i = 1; i < sortedPlay.length; i++) {
+        if (sortedPlay[i] === sortedPlay[i-1] + 1) {
+          // This number continues the current sequence
+          currentSeq.push(sortedPlay[i]);
+        } else {
+          // This number breaks the sequence
+          if (currentSeq.length > 1) {
+            sequences.push(currentSeq);
+          }
+          currentSeq = [sortedPlay[i]];
+        }
+      }
+      
+      // Add the last sequence if it exists
+      if (currentSeq.length > 1) {
+        sequences.push(currentSeq);
+      }
+      
+      // Categorize based on sequences found
+      if (sequences.length === 0) {
+        longestSequenceStats.noConsecutives++;
+      } else {
+        // Get sequence lengths (e.g., [2, 3] for a play with a pair and a triplet)
+        const sequenceLengths = sequences.map(seq => seq.length);
+        
+        // Find the longest sequence length for the primary categorization
+        const maxLength = Math.max(...sequenceLengths);
+        
+        // Update longest sequence stats
+        if (maxLength === 2) longestSequenceStats.twoConsecutive++;
+        else if (maxLength === 3) longestSequenceStats.threeConsecutive++;
+        else if (maxLength === 4) longestSequenceStats.fourConsecutive++;
+        else if (maxLength === 5) longestSequenceStats.fiveConsecutive++;
+        else if (maxLength === 6) longestSequenceStats.sixConsecutive++;
+        
+        // Update multiple sequences stats
+        if (sequences.length === 1) multipleSequencesStats.oneSequence++;
+        else if (sequences.length === 2) multipleSequencesStats.twoSequences++;
+        else if (sequences.length === 3) multipleSequencesStats.threeSequences++;
+        
+        // Record the combination of sequence lengths
+        // Sort to ensure consistent keys like "2-2" for two pairs
+        const combinationKey = sequenceLengths.sort((a, b) => a - b).join('-');
+        multipleSequencesStats.sequenceCombinations[combinationKey] = 
+          (multipleSequencesStats.sequenceCombinations[combinationKey] || 0) + 1;
+      }
+    });
+    
+    return { 
+      longestSequenceStats,
+      multipleSequencesStats
+    };
+  }
+
+export {evenAndOddCalculator, evenAndOddPercentageCalculator, getSixMostRepeatedNumbers, analyzeConsecutiveNumbers};

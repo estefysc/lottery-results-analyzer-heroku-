@@ -1,5 +1,5 @@
 import express from "express";
-import {getMostRepeated, getNumberData, getEvenOddData, getAllNumsData} from "./index.js";
+import {getMostRepeated, getNumberData, getEvenOddData, getAllNumsData, getConsecutiveNumsData} from "./index.js";
 import {createJsonFile} from "./parser.js";
 import path from "path";
 import {fileURLToPath} from 'url';
@@ -51,6 +51,10 @@ app.get("/api/evenOdd", function(req, res) {
 
 app.get("/api/allNums", function(req, res) {
     res.send(getAllNumsData());
+});
+
+app.get("/api/consecutiveNums", function(req, res) {
+    res.send(getConsecutiveNumsData());
 });
 
 app.get("/", function(req, res){

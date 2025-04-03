@@ -1,6 +1,6 @@
 // Brings in the ability to create the 'require' method.
 import {createRequire} from "module";
-import {evenAndOddPercentageCalculator, getSixMostRepeatedNumbers} from "./calculations.js";
+import {evenAndOddPercentageCalculator, getSixMostRepeatedNumbers, analyzeConsecutiveNumbers} from "./calculations.js";
 
 const require = createRequire(import.meta.url);
 
@@ -33,4 +33,8 @@ let getAllNumsData = () => {
     return { numbers: Object.fromEntries(numbersMap) };
 }
 
-export {getMostRepeated, getNumberData, getEvenOddData, getAllNumsData};
+let getConsecutiveNumsData = () => {
+    return analyzeConsecutiveNumbers(getNumberData().resultsArray);
+}
+
+export {getMostRepeated, getNumberData, getEvenOddData, getAllNumsData, getConsecutiveNumsData};

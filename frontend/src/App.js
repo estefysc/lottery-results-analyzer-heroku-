@@ -11,6 +11,7 @@ import {Routes,Route} from "react-router-dom";
 import FrequentNums from "./components/FrequentNums";
 import EvenOdds from "./components/EvenOdds";
 import AllNums from "./components/AllNums";
+import ConsecutiveNums from "./components/ConsecutiveNums";
 
 function App() {
     const [loading, setLoading] = useState(true);
@@ -33,6 +34,7 @@ function App() {
                             <Route path="/frequentNums" element={<FrequentNums />} />
                             <Route path="/evenOdds" element={<EvenOdds />} />
                             <Route path="/allNums" element={<AllNums />} />
+                            <Route path="/consecutiveNums" element={<ConsecutiveNums />} />
                         </Routes>
                     </div>
                 )
