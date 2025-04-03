@@ -86,6 +86,8 @@ function getSixMostRepeatedNumbers(numMap) {
 } // End of getMostRepeatedNumbers function.
 
 function analyzeConsecutiveNumbers(resultsArray) {
+    console.log("Analyzing consecutive numbers...");
+    console.log("This is the resultsArray being passed in: ", resultsArray);
     // Stats for single longest sequence per play
     const longestSequenceStats = {
       noConsecutives: 0,
