@@ -34,7 +34,9 @@ let getAllNumsData = () => {
 }
 
 let getConsecutiveNumsData = () => {
-    return analyzeConsecutiveNumbers(getNumberData().resultsArray);
+    let consecutiveNumsData = analyzeConsecutiveNumbers(getNumberData().resultsArray);
+    console.log(consecutiveNumsData);
+    return consecutiveNumsData;
 }
 
 export {getMostRepeated, getNumberData, getEvenOddData, getAllNumsData, getConsecutiveNumsData};
