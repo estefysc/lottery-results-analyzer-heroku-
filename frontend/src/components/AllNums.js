@@ -4,7 +4,7 @@ import "./AllNums.css";
 
 function AllNums() {
     return (
-        <div>
+        <div className="all-nums-container">
             <h2 className="section-title">All Numbers Analysis</h2>
             <AllNumsGraph />
             <p className="graphInfo">
