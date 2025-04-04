@@ -15,6 +15,17 @@ if(port == null || port == "") {
     port = 5000;
 }
 
+console.log('NODE_ENV:', process.env.NODE_ENV);
+
+// Redirects to the HTTPS version of the site if the request is HTTP  
+app.use((req, res, next) => {
+    if (req.header('x-forwarded-proto') !== 'https' && process.env.NODE_ENV === 'production') {
+      res.redirect(`https://${req.header('host')}${req.url}`);
+    } else {
+      next();
+    }
+});
+
 app.use(function(req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
