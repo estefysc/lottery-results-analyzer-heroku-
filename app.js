@@ -15,8 +15,6 @@ if(port == null || port == "") {
     port = 5000;
 }
 
-console.log('NODE_ENV:', process.env.NODE_ENV);
-
 // Redirects to the HTTPS version of the site if the request is HTTP  
 app.use((req, res, next) => {
     if (req.header('x-forwarded-proto') !== 'https' && process.env.NODE_ENV === 'production') {
