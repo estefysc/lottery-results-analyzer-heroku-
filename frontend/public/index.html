@@ -18,7 +18,10 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'G-STRHJ07399');
+      gtag('config', 'G-STRHJ07399', {
+        // This tells Google Analytics to automatically determine the appropriate cookie domain based on the current URL
+        'cookie_domain': 'auto'
+      });
     </script>
 
     <!--
