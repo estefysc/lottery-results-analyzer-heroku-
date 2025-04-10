@@ -34,7 +34,7 @@ app.use((req, res, next) => {
         "style-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com 'unsafe-inline'; " +
         "font-src 'self' https://fonts.gstatic.com; " +
         "img-src 'self' data:; " +
-        "connect-src 'self' https://lottery-analyzer.herokuapp.com"
+        "connect-src 'self' https://lottery-analyzer.herokuapp.com https://www.google-analytics.com"
       );
     next();
   });
